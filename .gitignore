@@ -1,0 +1,4 @@
+# Full-size originals (30 MB video, 1.5 MB portrait). The site serves the
+# compressed copies in assets/.
+originals/
+.DS_Store
