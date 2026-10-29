@@ -2,3 +2,6 @@
 # compressed copies in assets/.
 originals/
 .DS_Store
+
+# Reference image only (third-party cursor art); the site draws its own cursor.
+assets/custom_cursor.jpg

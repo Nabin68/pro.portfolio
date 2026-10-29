@@ -232,8 +232,18 @@
         </article>
       </div>
 
-      <div class="more reveal">
-        <h3 class="more-title">More on GitHub</h3>
+      <div class="more views reveal" data-view="list">
+        <div class="more-head">
+          <h3 class="more-title">More on GitHub</h3>
+          <div class="view-toggle glass" role="group" aria-label="View">
+            <button type="button" data-view="list" aria-pressed="true">List</button>
+            <button type="button" data-view="deck" aria-pressed="false">File deck</button>
+          </div>
+        </div>
+        <div class="deck">
+          <div class="deck-scene"><div class="deck-box"><span class="floor"></span><span class="wall back"></span><span class="wall left"></span><span class="wall right"></span><span class="wall front"></span></div></div>
+          <p class="deck-caption" aria-live="polite">Move across the files</p>
+        </div>
         <a class="row" href="https://github.com/Nabin68/Langgraph-complete-guide" target="_blank" rel="noopener"><b>LangGraph Complete Guide</b><span>Workflows, persistent chatbots, tool integration, MCP servers</span><i>↗</i></a>
         <a class="row" href="https://github.com/Nabin68/Langchain" target="_blank" rel="noopener"><b>LangChain Complete Guide</b><span>RAG, vector stores, embeddings, prompt patterns</span><i>↗</i></a>
         <a class="row" href="https://github.com/Nabin68/Placement_Predictor" target="_blank" rel="noopener"><b>Placement Predictor</b><span>Random Forest placement &amp; salary prediction app</span><i>↗</i></a>
@@ -297,7 +307,12 @@
     <section id="research" class="section container">
       <p class="eyebrow reveal">Research</p>
       <h2 class="display reveal">Published work.</h2>
-      <article class="paper glass spot reveal">
+      <div class="research views reveal" data-view="overview">
+      <div class="view-toggle glass" role="group" aria-label="Research view">
+        <button type="button" data-view="overview" aria-pressed="true">Overview</button>
+        <button type="button" data-view="computer" aria-pressed="false">Read on computer</button>
+      </div>
+      <article class="paper glass spot">
         <div class="paper-main">
           <span class="badge-solid">Springer · LNCS</span>
           <h3>MLESA-Net</h3>
@@ -314,6 +329,24 @@
           <div><b>~<span data-count="0.70" data-decimals="2">0.70</span></b><span>Micro-F1 · XLM-R</span></div>
         </div>
       </article>
+      <div class="pc">
+        <div class="pc-scene" role="button" tabindex="0" aria-label="Open the paper on the computer"><div class="pc-box"></div></div>
+        <p class="pc-caption">Click the computer to read the paper</p>
+      </div>
+      </div>
+      <dialog class="reader" data-lenis-prevent aria-label="MLESA-Net paper">
+        <div class="reader-pc">
+          <div class="reader-mon">
+            <div class="reader-screen"><div class="reader-pages"><p class="reader-loading">Booting up the paper…</p></div></div>
+            <span class="reader-led" aria-hidden="true"></span>
+          </div>
+          <div class="reader-stand" aria-hidden="true"></div>
+        </div>
+        <div class="reader-bar">
+          <a class="btn btn-glass glass" href="assets/MLESA-Net.pdf" target="_blank" rel="noopener">Open PDF ↗</a>
+          <button type="button" class="btn btn-dark reader-close" autofocus>Close</button>
+        </div>
+      </dialog>
     </section>
 
     <!-- ───────── Contact ───────── -->
@@ -322,12 +355,22 @@
         <p class="eyebrow reveal">Contact</p>
         <h2 class="display reveal">Let's build something intelligent.</h2>
         <p class="section-lede reveal">Have an AI product, an automation problem or a role in mind? Send a message - it lands straight in my inbox.</p>
-        <div class="direct reveal">
+        <div class="reach views reveal" data-view="list">
+        <div class="view-toggle glass" role="group" aria-label="Contact view">
+          <button type="button" data-view="list" aria-pressed="true">List</button>
+          <button type="button" data-view="drawer" aria-pressed="false">Drawer</button>
+        </div>
+        <div class="direct">
           <a href="mailto:nabingupta68@gmail.com"><span>Email</span>nabingupta68@gmail.com</a>
           <a href="tel:+9779807085082"><span>Phone</span>+977 980-7085082</a>
           <a href="https://wa.me/9779807085082" target="_blank" rel="noopener"><span>WhatsApp</span>Chat on WhatsApp ↗</a>
           <a href="https://www.linkedin.com/in/nabin-rouniyar-86682726a/" target="_blank" rel="noopener"><span>LinkedIn</span>Nabin Kumar Rouniyar ↗</a>
           <a href="https://github.com/Nabin68" target="_blank" rel="noopener"><span>GitHub</span>Nabin68 ↗</a>
+        </div>
+        <div class="cab">
+          <div class="cab-scene"><div class="cab-box"><span class="cab-floor"></span><span class="cab-plinth"></span><span class="cab-plinth-l"></span><span class="cab-back"></span><span class="cab-left"></span><span class="cab-top"></span><span class="cab-lip"></span><span class="cab-lip-l"></span></div></div>
+          <p class="cab-caption" aria-live="polite">Pull a drawer to get in touch</p>
+        </div>
         </div>
       </div>
 
@@ -344,6 +387,7 @@
     <!-- ───────── Spider-Verse edition ───────── -->
     <section class="container">
       <a class="alt-edition glass spot reveal" href="https://nabin-rouniyar-portfolio.vercel.app/" target="_blank" rel="noopener" data-cursor="Visit">
+        <span class="alt-web w1" aria-hidden="true"></span><span class="alt-web w2" aria-hidden="true"></span><span class="alt-web w3" aria-hidden="true"></span>
         <div>
           <p class="eyebrow">Off the clock</p>
           <h3>Prefer something playful? Explore the Spider-Verse edition.</h3>

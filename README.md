@@ -10,8 +10,10 @@ python -m http.server 5180   # then open http://localhost:5180
 
 - `index.html` - all content lives here
 - `styles.css` - design tokens at the top (`:root`)
-- `main.js` - animations, cursor, nav, ThoughtLoom video, contact form, visit alert
-- `assets/` - what the site serves: photo, résumé, compressed ThoughtLoom film (3 MB)
+- `main.js` - animations, cursor, nav, ThoughtLoom video, contact form, visit alert, and the
+  List / 3D views (file deck, contact drawer, research desk + PDF reader) with their switch animations and sounds
+- `assets/` - what the site serves: photo, résumé, compressed ThoughtLoom film (3 MB),
+  the MLESA-Net paper (`MLESA-Net.pdf`, shown on the desk computer) and the Spider-Verse web drawing
 - `originals/` - full-size source files (git-ignored). To swap the résumé, replace
   `assets/Nabin-Kumar-Rouniyar-Resume.pdf` keeping that file name.
 
