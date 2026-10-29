@@ -15,6 +15,6 @@ python -m http.server 5180   # then open http://localhost:5180
 - `originals/` — full-size source files (git-ignored). To swap the résumé, replace
   `assets/Nabin-Kumar-Rouniyar-Resume.pdf` keeping that file name.
 
-**Email:** uses the same Web3Forms key as the Spider-Verse edition. The contact form sends the
+**Email:** uses its own Web3Forms key (in `main.js`). The contact form sends the
 message, and each new browser session sends one "someone visited" email (skipped on localhost).
 Web3Forms' free plan allows 250 submissions/month, shared by both.

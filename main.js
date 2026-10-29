@@ -1,6 +1,5 @@
-// Same Web3Forms inbox as the Spider-Verse edition. Access keys are public by design —
-// they only identify the destination inbox.
-const WEB3FORMS_KEY = '0aa5b3f3-8077-495b-8620-f36c000bd70d'
+// Web3Forms access keys are public by design — they only identify the destination inbox.
+const WEB3FORMS_KEY = '5ae40758-57aa-4ed1-8fc4-de130f6d6aed'
 const WEB3FORMS_URL = 'https://api.web3forms.com/submit'
 
 const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches
