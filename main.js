@@ -258,7 +258,8 @@ if (hasGsap && !reduced) {
     .to('.hero-title .line > span', { y: 0, duration: 1.4, stagger: 0.12 }, 0.15)
     .fromTo('.hero .reveal', { opacity: 0, y: 24, filter: 'blur(8px)' }, { opacity: 1, y: 0, filter: 'blur(0px)', duration: 1.2, stagger: 0.1 }, 0.35)
     .fromTo('.hero .reveal-scale', { opacity: 0, scale: 0.92, y: 40 }, { opacity: 1, scale: 1, y: 0, duration: 1.6 }, 0.3)
-    .from('.nav-wrap', { y: -40, opacity: 0, duration: 1.2 }, 0.2)
+    // clearProps: a leftover inline transform would override .nav-wrap.hide and pin the nav.
+    .from('.nav-wrap', { y: -40, opacity: 0, duration: 1.2, clearProps: 'transform,opacity' }, 0.2)
 
   // Section reveals
   ScrollTrigger.batch('main .reveal:not(.hero .reveal)', {
