@@ -1,4 +1,4 @@
-// Web3Forms access keys are public by design — they only identify the destination inbox.
+// Web3Forms access keys are public by design - they only identify the destination inbox.
 const WEB3FORMS_KEY = '5ae40758-57aa-4ed1-8fc4-de130f6d6aed'
 const WEB3FORMS_URL = 'https://api.web3forms.com/submit'
 
@@ -17,12 +17,12 @@ const $$ = (s, r = document) => [...r.querySelectorAll(s)]
   try {
     if (sessionStorage.getItem('visit-notified')) return
     sessionStorage.setItem('visit-notified', '1')
-  } catch { /* storage blocked — still notify once for this load */ }
+  } catch { /* storage blocked - still notify once for this load */ }
 
   const body = new FormData()
   body.append('access_key', WEB3FORMS_KEY)
   body.append('subject', '👀 Someone just visited your portfolio')
-  body.append('from_name', 'Portfolio — Visit alert')
+  body.append('from_name', 'Portfolio - Visit alert')
   body.append(
     'message',
     [
@@ -67,7 +67,7 @@ const $$ = (s, r = document) => [...r.querySelectorAll(s)]
     const body = new FormData(form)
     body.append('access_key', WEB3FORMS_KEY)
     body.append('subject', `New portfolio message from ${body.get('name')}`)
-    body.append('from_name', 'Portfolio — Contact form')
+    body.append('from_name', 'Portfolio - Contact form')
 
     try {
       const res = await fetch(WEB3FORMS_URL, { method: 'POST', body })
@@ -75,7 +75,7 @@ const $$ = (s, r = document) => [...r.querySelectorAll(s)]
       if (!data.success) throw new Error(data.message)
       form.reset()
       status.className = 'form-status ok'
-      status.textContent = "Thanks — your message is in my inbox. I'll reply shortly."
+      status.textContent = "Thanks - your message is in my inbox. I'll reply shortly."
     } catch (err) {
       status.className = 'form-status err'
       status.textContent = 'That didn’t go through. Please email nabingupta68@gmail.com directly.'
@@ -175,7 +175,7 @@ $$('.spot').forEach((el) => {
 })
 
 if (finePointer && !reduced) {
-  // 3D tilt — portrait strong, project cards subtle.
+  // 3D tilt - portrait strong, project cards subtle.
   const tilt = (el, max, sheen) => {
     el.addEventListener('pointermove', (e) => {
       const r = el.getBoundingClientRect()
@@ -272,7 +272,7 @@ if (hasGsap && !reduced) {
   // Hero portrait parallax as you leave
   gsap.to('.hero-visual', { yPercent: -6, ease: 'none', scrollTrigger: { trigger: '.hero', start: 'top top', end: 'bottom top', scrub: true } })
 
-  // About statement — words light up with scroll
+  // About statement - words light up with scroll
   gsap.to('.about-statement .w', {
     opacity: 1, stagger: 0.1, ease: 'none',
     scrollTrigger: { trigger: '.about-statement', start: 'top 80%', end: 'bottom 45%', scrub: true },
